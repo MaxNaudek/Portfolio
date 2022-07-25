@@ -1,4 +1,4 @@
-const $options = document.querySelector(".options");
+const $options = document.querySelector(".options-container");
 const $buttons = document.querySelectorAll(".description-buttons");
 const $articles = document.querySelectorAll(".content");
 const $redirect = document.querySelectorAll("#redirect-content");
@@ -46,10 +46,8 @@ $options.addEventListener("click", function (e) {
     //El nombre de ambos dataset y id es igual, por eso funciona este rollo de andarlos pidiendo dentro de la misma funcion
     // console.log(element);
     element.classList.add("active");
-  
   }
 });
-
 
 $close.addEventListener("click", function (e) {
 if ($close) {
@@ -68,8 +66,6 @@ if ($closeInt) {
   })
 }
 });
-
-
 
 function displaydefault(){ 
   $project1.style.display= 'block'
@@ -132,13 +128,3 @@ function displaydefault(){
     // {$toolTip.style.display='none' }
   
   })
-
-
-
-
-//Características:
-//Creacion de objeto principal que apunta a todo el contenido que se modificará mediante eventos.
-//Brindar propiedades compartidas que puedan intercambiarse! Comunicación sencilla entre elementos
-//Emplear métodos para afectar todas o una propiedad
-//Crear variables necesarias dentro para acceder a propiedades específicas que puedan identificarse
-//facilmente y haciéndolas dinámicas. Por ejemplo, elegir cuando se va a usar la propiedad id y luego la class o dataset

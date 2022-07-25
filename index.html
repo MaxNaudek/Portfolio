@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,11 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<script src="https://kit.fontawesome.com/a012286be5.js" crossorigin="anonymous"></script>
-  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a012286be5.js" crossorigin="anonymous"></script>
+  <script src="index.js" charset="utf-8" defer></script>
+
+<title>Portfolio</title>
 </head>
 <body>
   <header>
@@ -20,129 +23,121 @@
       <img class="icon Linkedln" id="Linkedln" src="images/linkedin.png" alt="Linkedln"></a>
     <a href="https://www.codewars.com/users/MaxNaudek" target="_blank">
       <img class="icon codewars" id="codewars" src="images/codewars.png" alt="Codewars"></a>
-
   </header>
-  <div class="border-title">
-    <h1 class="main"> Max's Portfolio!!
-      <img src="images/Perfil2.jpg" alt="profile" id="profile" />
-   </h1>
-    <section class="options">
 
-      <div class="container-buttons">
-        <button class="description-buttons active" data-change="whoamI" id="redirect-content"> Work Experience</button>
-        <button class="description-buttons"data-change="experience" id="redirect-content"> Interests</button>
-        <button class="description-buttons" data-change="interests"><a href="#navbar-P">Projects</a> </button>
-        <div id="target"></div>
-      </div>
-
+    <div class="title-portfolio">
+      <h1 class="title-portfolio__main"> Max's Portfolio!!
+        <img src="images/Perfil2.jpg" alt="profile" id="profile" />
+      </h1>
       
-      <div class="about-content">
+      <section class="options-container">
+        <div class="options-container__container-buttons">
+          <button class="description-buttons active" data-change="work-experience" id="redirect-content"> Work Experience</button>
+          <button class="description-buttons" data-change="experience" id="redirect-content"> Interests</button>
+          <button class="description-buttons" data-change="projects"> <a href="#navbar-P">Projects</a> </button>
+          <div id="target"></div>
+        </div>
 
-          <div class="content" id="whoamI">
-            <span class="close"> <i class="fa-solid fa-circle-xmark"></i></span>
-            <section class="who">
-              <div class="selfDescription">
-                
-              <p class="p1">
-               <span >⚫</span>  After a year of studying at a programming school in Mexico, I can consider myself a JavaScript and React developer.
-                 I also like using Express, Node, and Databases.
-              </p>
-                <p class="p2">
-                  <span>⚫</span> Although I consider myself a 'rookie' in every aspect of technology,
+        
+        <div class="about-content">
+            <div class="content" id="work-experience">
+              <span class="close"> <i class="fa-solid fa-circle-xmark"></i></span>
+              <section class="who">
+                <div class="selfDescription">
+                  <p class="p1">
+                    <span >⚫</span>  After a year of studying at a programming school in Mexico, I can consider myself a JavaScript and React developer.
+                  I also like using Express, Node, and Databases.
+                  </p>
+                  <p class="p2">
+                    <span>⚫</span> Although I consider myself a 'rookie' in every aspect of technology,
                   I feel mainly comfortable with JavaScript in general. ⭐
-                </p>
-                <p class="p3">
-                  <span>⚫</span>  As a programmer I don't any laboral experiencie yet!
-                </p>
-              </div>
-            </section>
-            
-          </div>
-
-          <div class="content" id="experience">
-                <span class="close-int"> <i class="fa-solid fa-circle-xmark"></i></span>
-                <div class="order-Icons">
-                </br>
-                <ul class="fa-ul">
-                  <li><span class="fa-li"><i class="fa-solid fa-code"></i> </span>Coding </li>
-                  <li><span class="fa-li"><i class="fa-solid fa-chess"></i> </span>Chess</li>
-                  <li><span class="fa-li"><i class="fa-regular fa-eye"></i> </span>Cognitive biases</li>
-                  <li><span class="fa-li"><i class="fa-solid fa-person-running"></i> </span>Calisthenics</li>
-                </ul>
-                </br>
-                <ul class="fa-ul">
-                  <li><span class="fa-li"><i class="fa-solid fa-puzzle-piece"></i> </span>Processes of learning</li>
-                  <li><span class="fa-li"><i class="fa-solid fa-dragon"></i> </span>Some cartoon series</li>
-                  <li><span class="fa-li"><i class="fa-solid fa-dice-d20"></i> </span>Board games</li>
-                 </ul>
-                 </br>
-                
-              </div>
-              <div class="content" id="interests"> <a href="#navbar-P">ASDASD</a>
-              </div>
+                  </p>
+                  <p class="p3">
+                    <span></span>  As a programmer I don't any laboral experiencie yet!
+                  </p>
+                </div>
+              </section>
             </div>
-          </section>
+
+             <div class="content" id="experience">
+                  <span class="close-int"> <i class="fa-solid fa-circle-xmark"></i></span>
+                  <div class="order-Icons">
+                  </br>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fa-solid fa-code"></i> </span>Coding </li>
+                    <li><span class="fa-li"><i class="fa-solid fa-chess"></i> </span>Chess</li>
+                    <li><span class="fa-li"><i class="fa-regular fa-eye"></i> </span>Cognitive biases</li>
+                    <li><span class="fa-li"><i class="fa-solid fa-person-running"></i> </span>Calisthenics</li>
+                  </ul>
+                  </br>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fa-solid fa-puzzle-piece"></i> </span>Processes of learning</li>
+                    <li><span class="fa-li"><i class="fa-solid fa-dragon"></i> </span>Some cartoon series</li>
+                    <li><span class="fa-li"><i class="fa-solid fa-dice-d20"></i> </span>Board games</li>
+                  </ul>
+                  </br>
+                </div>
+                <div class="content" id="projects"> <a href="#navbar-P">ASDASD</a></div>
+             </div>
+       </section>
     </div>
   
-    <div class="container-proyects">
-<header class="navbar-P" id="navbar-P">PROJECTS!</header>
-  <div class="SectionButton">
-    <button class="filter-buttons all">All </button>
-    <button class="filter-buttons htmljs">HTML/JS</a></button>
-    <button class="filter-buttons react">REACT</a></button>
-    <button class="filter-buttons others">OTHERS</a></button>
-  </div>
+        <div class="container-proyects">
+            <header class="navbar-P" id="navbar-P">PROJECTS!</header>
+              <div class="SectionButton">
+                <button class="filter-buttons all">All </button>
+                <button class="filter-buttons htmljs">HTML/JS</a></button>
+                <button class="filter-buttons react">REACT</a></button>
+                <button class="filter-buttons others">OTHERS</a></button>
+              </div>
 
-  <section class="projects-grid">
-      <article class="project1"> Cracked Colors
-          <span class="tooltipColors" data-color='Addicted colors everywhere! OMG, tasty!'>
-          <i class="fas fa-info-circle"></i>
-          <p class="text-muted">(Click to see more comments)</p>
-          </span>
-          <a href="https://cracked-colors.herokuapp.com/" target="_blank"> <img class="img-project1" src="images/crackedcolors.png"/> </a>
-      </article>
+            <section class="projects-grid">
+                  <article class="project1"> Cracked Colors
+                      <span class="tooltipColors" data-color='Addicted colors everywhere! OMG, tasty!'>
+                      <i class="fas fa-info-circle"></i>
+                      <p class="text-muted">(Click to see more comments)</p>
+                      </span>
+                      <a href="https://cracked-colors.herokuapp.com/" target="_blank"> <img class="img-project1" src="images/crackedcolors.png"/> </a>
+                  </article>
 
-      <article class="project2">Random API
-        <span class="randomAPI" data-randomapi='Nonsense project but hey, there are cats!'>
-        <i class="fas fa-info-circle"></i>
-        <p class="text-muted">(Click to see more comments)</p>
-        </span>
-        <a class="center" href="https://projectomax99.netlify.app/" target="_blank"> <img class="img-project2" src="images/randomAPI.png"/> </a>
-      </article>
+                  <article class="project2">Random API
+                    <span class="randomAPI" data-randomapi='Nonsense project but hey, there are cats!'>
+                    <i class="fas fa-info-circle"></i>
+                    <p class="text-muted">(Click to see more comments)</p>
+                    </span>
+                    <a class="center" href="https://projectomax99.netlify.app/" target="_blank"> <img class="img-project2" src="images/randomAPI.png"/> </a>
+                  </article>
 
-      <article class="project3">Bread Shop Project
-        <span class="breadShop" data-randomapi='A traditional sassy shop to bread lovers and bakers!'>
-          <i class="fas fa-info-circle"></i>
-          <p class="text-muted">(Click to see more comments)</p>
-        </span>
-        <a class="center" href="https://maxnaudek.github.io/Bread-Shop-Proyect/" target="_blank"> <img class="img-project3" src="images/BreadShop.png"/> </a>
-      </article>
-      
-      <article class="project4">Movie-App
-        <span class="randomAPI" data-randomapi='A traditional sassy shop to bread lovers and bakers!'>
-          <i class="fas fa-info-circle"></i>
-          <p class="text-muted">(Click to see more comments)</p>
-        </span>
-        <a class="center" href="https://maxnaudek.github.io/Bread-Shop-Proyect/" target="_blank"> <img class="img-project3" src="images/BreadShop.png"/> </a>
-      </article>
+                  <article class="project3">Bread Shop Project
+                    <span class="breadShop" data-randomapi='A traditional sassy shop to bread lovers and bakers!'>
+                      <i class="fas fa-info-circle"></i>
+                      <p class="text-muted">(Click to see more comments)</p>
+                    </span>
+                    <a class="center" href="https://maxnaudek.github.io/Bread-Shop-Proyect/" target="_blank"> <img class="img-project3" src="images/BreadShop.png"/> </a>
+                  </article>
+                  
+                  <article class="project4">Movie-App
+                    <span class="randomAPI" data-randomapi='A traditional sassy shop to bread lovers and bakers!'>
+                      <i class="fas fa-info-circle"></i>
+                      <p class="text-muted">(Click to see more comments)</p>
+                    </span>
+                    <a class="center" href="https://maxnaudek.github.io/Bread-Shop-Proyect/" target="_blank"> <img class="img-project3" src="images/BreadShop.png"/> </a>
+                  </article>
+            </section>
+        </div>
 
-  </section>
-</div>
-
-<section class="section-Technologies" id="Tech">TECHNOLOGIES:
-  <img class="icons 1" src="https://img.icons8.com/ios/100/000000/html-5--v2.png"/>
-  <img class="icons 2" src="https://img.icons8.com/ios/100/000000/css3.png"/>
-  <img class="icons 3" src="https://img.icons8.com/ios/100/000000/javascript--v1.png"/>
-  <img class="icons 4" src="https://img.icons8.com/ios/100/000000/react-native--v2.png"/>
-  <img class="icons 5" src="https://img.icons8.com/windows/100/000000/bootstrap.png"/>
-  <img class="icons 6" src="https://img.icons8.com/ios/100/000000/git.png"/>
-  <img class="icons 7" src="https://img.icons8.com/windows/100/000000/nodejs.png"/>
-  <img class="icons 8" src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/100/000000/external-mongodb-a-cross-platform-document-oriented-database-program-logo-regular-tal-revivo.png"/>
-  <img class="icons 9" src="https://img.icons8.com/external-outline-juicy-fish/100/000000/external-sql-coding-and-development-outline-outline-juicy-fish.png"/>
-  <img class="icons 10" src="https://img.icons8.com/ios/100/000000/postgreesql.png"/>
-</section>
-
-<script src="index.js" charset="utf-8"></script>
+      <section class="section-Technologies" id="Tech">TECHNOLOGIES:
+        <img class="icons 1" src="https://img.icons8.com/ios/100/000000/html-5--v2.png"/>
+        <img class="icons 2" src="https://img.icons8.com/ios/100/000000/css3.png"/>
+        <img class="icons 3" src="https://img.icons8.com/ios/100/000000/javascript--v1.png"/>
+        <img class="icons 4" src="https://img.icons8.com/ios/100/000000/react-native--v2.png"/>
+        <img class="icons 5" src="https://img.icons8.com/windows/100/000000/bootstrap.png"/>
+        <img class="icons 6" src="https://img.icons8.com/ios/100/000000/git.png"/>
+        <img class="icons 7" src="https://img.icons8.com/windows/100/000000/nodejs.png"/>
+        <img class="icons 8" src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/100/000000/external-mongodb-a-cross-platform-document-oriented-database-program-logo-regular-tal-revivo.png"/>
+        <img class="icons 9" src="https://img.icons8.com/external-outline-juicy-fish/100/000000/external-sql-coding-and-development-outline-outline-juicy-fish.png"/>
+        <img class="icons 10" src="https://img.icons8.com/ios/100/000000/postgreesql.png"/>
+      </section>
 
 </body>
 </html>
