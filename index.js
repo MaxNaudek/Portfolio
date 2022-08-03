@@ -97,8 +97,8 @@ function displaydefault(){
     displaydefault()
     $project1.style.display= 'none'
     $project2.style.gridArea= 'project1'
-    $project3.style.gridArea= 'project2'
-    $project4.style.display= 'none'
+    $project3.style.display= 'none'
+    $project4.style.gridArea= 'project2'
   })
   
   $buttonOthers.addEventListener("click", function (e) {
