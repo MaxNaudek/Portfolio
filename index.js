@@ -116,15 +116,16 @@ function displaydefault(){
   
   $toolTip.addEventListener('mouseleave', e => {
   $textmuted.style.display= 'none'
-  $toolTip.dataset.color= 'Addicted colors everywhere! OMG, tasty!'
+  $toolTip.dataset.color= 'Kaminoittech is a sector of Moen company'
   });
   
-  const messagesColor=['Addicted colors everywhere! OMG, tasty!','Haha, This is like being on drugs', 'I cannot stop clicking the center, WOW', "The real Dr.Spiegel was in my basement..." ]
-  let counterColor=0
-  $toolTip.addEventListener('click', function(e) {
-    counterColor++
-    $toolTip.dataset.color= messagesColor[counterColor]
-    if(counterColor==3) counterColor=0
-    // {$toolTip.style.display='none' }
+  // const messagesColor=['Addicted colors everywhere! OMG, tasty!','Haha, This is like being on drugs', 'I cannot stop clicking the center, WOW', "The real Dr.Spiegel was in my basement..." ]
+  //  const messagesColor=['Kaminoittech is a sector of Moen company']
+  // let counterColor=0
+  // $toolTip.addEventListener('click', function(e) {
+  //   counterColor++
+  //   $toolTip.dataset.color= messagesColor[counterColor]
+  //   if(counterColor==0) counterColor=0
+  //   // {$toolTip.style.display='none' }
   
-  })
+  // })
