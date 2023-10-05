@@ -34,7 +34,6 @@ $options.addEventListener("click", function (e) {
  if (change) {
 
  $buttons.forEach(function (element) {
-    console.log(element.classList);
     element.classList.remove("active");
      });
      e.target.classList.add("active");
@@ -50,21 +49,20 @@ $options.addEventListener("click", function (e) {
 });
 
 $close.addEventListener("click", function (e) {
-if ($close) {
-  console.log($close)
-  $articles.forEach(function(article){
-    article.classList.remove("active")
-  })
-}
+  if ($close) {
+    $articles.forEach(function(article){
+      article.classList.remove("active")
+    })
+  }
 });
 
 $closeInt.addEventListener("click", function (e) {
-if ($closeInt) {
-  console.log($closeInt)
-  $articles.forEach(function(article){
-    article.classList.remove("active")
-  })
-}
+  if ($closeInt) {
+    console.log($closeInt)
+    $articles.forEach(function(article){
+      article.classList.remove("active")
+    })
+  }
 });
 
 function displaydefault(){ 
@@ -86,27 +84,29 @@ function displaydefault(){
   
   $buttonJs.addEventListener("click", function (e) {
     displaydefault()
-    $project1.style.gridArea= 'project1'
+    $project1.style.display= 'none'
      $project2.style.display= 'none'
-    $project3.style.gridArea= 'project2'
-     $project4.style.display= 'none'
+    $project3.style.display= 'none'
+     $project4.style.gridArea= 'project4'
 
   })
   
   $buttonReact.addEventListener("click", function (e) {
     displaydefault()
-    $project1.style.display= 'none'
-    $project2.style.gridArea= 'project1'
-    $project3.style.display= 'none'
-    $project4.style.gridArea= 'project2'
+   
+    $project1.style.gridArea= 'project1'
+    $project2.style.gridArea= 'project2'
+    $project3.style.gridArea= 'project3'
+    $project4.style.display= 'none'
+  
   })
   
   $buttonOthers.addEventListener("click", function (e) {
     displaydefault()
-    $project4.style.gridArea= 'project1'
-    $project2.style.display= 'none'
-    $project3.style.display= 'none'
     $project1.style.display= 'none'
+    $project2.style.gridArea= 'project2'
+    $project3.style.display= 'none'
+    $project4.style.display= 'none'
     // $project4.style.height= '80%'
   })
   
