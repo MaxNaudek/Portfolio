@@ -29,7 +29,7 @@ $redirect.forEach(function (e){
 })
 
 $options.addEventListener("click", function (e) {
-  // console.log($main.target);
+
   const change=e.target.dataset.change
  if (change) {
 
@@ -42,8 +42,7 @@ $options.addEventListener("click", function (e) {
       article.classList.remove("active");
     });
     const element = document.getElementById(change);
-    //El nombre de ambos dataset y id es igual, por eso funciona este rollo de andarlos pidiendo dentro de la misma funcion
-    // console.log(element);
+    //El nombre de ambos dataset y id es igual, por eso funciona dentro de la misma funcion
     element.classList.add("active");
   }
 });

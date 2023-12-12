@@ -433,7 +433,7 @@ margin-left:8%;
   position:absolute;
   content: attr(data-color);
   top: -3.4rem;
-  right: -1100%;
+  right: -1700%;
   width: max-content;
   border-radius: .3rem;
   border: 3.5px solid black;
