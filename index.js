@@ -113,10 +113,10 @@ function displaydefault(){
   if ($toolTip){$textmuted.style.display= 'block'}
   });
   
-  $toolTip.addEventListener('mouseleave', e => {
-  $textmuted.style.display= 'none'
-  $toolTip.dataset.color= 'Kaminoittech is a sector of Moen company'
-  });
+  // $toolTip.addEventListener('mouseleave', e => {
+  // $textmuted.style.display= 'none'
+  // $toolTip.dataset.color= 'Kaminoittech is a sector of Moen company'
+  // });
   
   // const messagesColor=['Addicted colors everywhere! OMG, tasty!','Haha, This is like being on drugs', 'I cannot stop clicking the center, WOW', "The real Dr.Spiegel was in my basement..." ]
   //  const messagesColor=['Kaminoittech is a sector of Moen company']

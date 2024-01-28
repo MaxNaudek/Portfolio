@@ -103,7 +103,7 @@ header>a:hover{
   left: 30px;
   margin-left: 1%;
   margin-right: 1%;
-  clip-path: circle(36% at center);
+  clip-path: circle(44% at center);
 } 
 
 .options-container__container-buttons{
@@ -117,7 +117,7 @@ header>a:hover{
 .description-buttons{
   font-size: 2.5vw;
   font-family: 'Titillium Web', sans-serif;
-    padding: 2%;
+    padding: 5%;
     padding-left: 0%;
     padding-right: 0%;
     border: 2px solid transparent;
