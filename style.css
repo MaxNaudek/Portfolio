@@ -345,7 +345,7 @@ margin-left:8%;
 }
 
 .navbar-P:before {
-  content:'gdfg'
+  /* content:'' ; */
     display: flex;
     font-size:2vw;
     font-family: 'Fira Sans', sans-serif;
