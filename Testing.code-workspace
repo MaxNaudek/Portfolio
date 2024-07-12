@@ -1,0 +1,45 @@
+{
+	"folders": [
+		{
+			"name": "Testing",
+			"path": "../../../Testing"
+		},
+		{
+			"name": "EstructurasDatos",
+			"path": "../../../EstructurasDatos"
+		},
+		{
+			"name": "gato_tic-tac-toe",
+			"path": "../../../gato_tic-tac-toe"
+		},
+		{
+			"name": "listaTo_Do",
+			"path": "../../../listaTo_Do"
+		},
+		{
+			"name": "pruebaTécnica",
+			"path": "../../../pruebaTécnica"
+		},
+		{
+			"name": "peliculas_Prueba",
+			"path": "../../../peliculas_Prueba"
+		},
+		{
+			"name": "ShoppingCar",
+			"path": "../../../ShoppingCar"
+		},
+		{
+			"path": "../../../toDo_Typescript"
+		},
+		{
+			"path": "../../../manga_comic_ts"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"java.debug.settings.onBuildFailureProceed": true,
+		"liveServer.settings.multiRootWorkspaceName": "Portfolio-Proyects"
+	}
+}
